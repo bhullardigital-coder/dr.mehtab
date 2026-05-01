@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, Star, Clock, MapPin, Phone, ShieldCheck } from 'lucide-react';
-import drMehtabImg from '../public/dr-mehtab.jpg';
 
 const services = [
   { title: 'General Dentistry', desc: 'Routine checkups, cleanings, and preventive care to maintain oral heath.', icon: '🦷' },
@@ -88,10 +87,9 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-[4/5] rounded-3xl overflow-hidden relative border border-slate-800">
                 <Image
-                  src={drMehtabImg}
+                  src="/dr-mehtab.jpg"
                   alt="Dr. Mehtab"
                   fill
-                  placeholder="blur"
                   className="object-cover"
                   referrerPolicy="no-referrer"
                 />

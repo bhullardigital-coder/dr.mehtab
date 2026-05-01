@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { Award, Heart, Shield, Sparkles } from 'lucide-react';
-import drMehtabImg from '../../public/dr-mehtab.jpg';
 
 export default function AboutPage() {
   return (
@@ -44,10 +43,9 @@ export default function AboutPage() {
           <div className="order-1 lg:order-2">
             <div className="relative aspect-[3/4] max-w-md mx-auto rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
               <Image
-                src={drMehtabImg}
+                src="/dr-mehtab.jpg"
                 alt="Dr. Mehtab"
                 fill
-                placeholder="blur"
                 className="object-cover object-top"
                 referrerPolicy="no-referrer"
               />
