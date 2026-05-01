@@ -32,6 +32,9 @@ export default function AboutPage() {
                   <Award className="w-5 h-5 text-teal-400" /> B.D.S. (Bachelor of Dental Surgery)
                 </li>
                 <li className="flex items-center gap-3">
+                  <Award className="w-5 h-5 text-teal-400" /> Advanced Certification in Orthodontics                
+                </li>
+                <li className="flex items-center gap-3">
                   <Award className="w-5 h-5 text-teal-400" /> Advanced Certification in Endodontics
                 </li>
                 <li className="flex items-center gap-3">
