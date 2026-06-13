@@ -1,12 +1,11 @@
 import Image from 'next/image';
 
 const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', alt: 'Clinic Reception', width: 'col-span-2 md:col-span-1', height: 'row-span-2' },
-  { src: 'https://images.unsplash.com/photo-1596706912389-9a008c26f047?w=800&q=80', alt: 'Operation Theatre', width: 'col-span-2 md:col-span-2', height: 'row-span-1' },
-  { src: 'https://images.unsplash.com/photo-1596706912389-9a008c26f047?w=800&q=80', alt: 'Waiting Lounge', width: 'col-span-1', height: 'row-span-1' },
-  { src: 'https://images.unsplash.com/photo-1598256989487-7756f3d97af6?w=800&q=80', alt: 'Dental Chair', width: 'col-span-1', height: 'row-span-1' },
-  { src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', alt: 'Consultation Room', width: 'col-span-2', height: 'row-span-2' },
-  { src: 'https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=800&q=80', alt: 'Advanced X-Ray', width: 'col-span-1 md:col-span-2', height: 'row-span-1' },
+  { src: '/clinic-reception.jpg', alt: 'Clinic Reception', width: 'col-span-2 md:col-span-1', height: 'row-span-2', objectPosition: 'object-top' },
+  { src: '/operation-theatre.jpg', alt: 'Operation Theatre', width: 'col-span-2 md:col-span-2', height: 'row-span-1', objectPosition: 'object-center' },
+  { src: '/dental-chair.jpg', alt: 'Dental Care in Action', width: 'col-span-1 md:col-span-1', height: 'row-span-1', objectPosition: 'object-center' },
+  { src: '/consultation-room.jpg', alt: 'Consultation Room', width: 'col-span-2 md:col-span-2', height: 'row-span-2', objectPosition: 'object-center' },
+  { src: '/advanced-x-ray.jpg', alt: 'Advanced Diagnostics', width: 'col-span-1 md:col-span-2', height: 'row-span-1', objectPosition: 'object-center' },
 ];
 
 export default function GalleryPage() {
@@ -27,7 +26,7 @@ export default function GalleryPage() {
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover group-hover:scale-105 group-hover:opacity-80 transition-all duration-500"
+                className={`object-cover ${img.objectPosition} group-hover:scale-105 group-hover:opacity-80 transition-all duration-500`}
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
