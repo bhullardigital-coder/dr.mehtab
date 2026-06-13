@@ -6,7 +6,7 @@ const galleryImages = [
   { src: 'https://images.unsplash.com/photo-1596706912389-9a008c26f047?w=800&q=80', alt: 'Waiting Lounge', width: 'col-span-1', height: 'row-span-1' },
   { src: 'https://images.unsplash.com/photo-1598256989487-7756f3d97af6?w=800&q=80', alt: 'Dental Chair', width: 'col-span-1', height: 'row-span-1' },
   { src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', alt: 'Consultation Room', width: 'col-span-2', height: 'row-span-2' },
-  { src: 'https://github.com/bhullardigital-coder/dr.mehtab/blob/main/public/advanced-x-ray.jpg', alt: 'Advanced X-Ray', width: 'col-span-1 md:col-span-2', height: 'row-span-1' },
+  { src: '/advanced-x-ray.jpg', alt: 'Advanced X-Ray', width: 'col-span-1 md:col-span-2', height: 'row-span-1' },
 ];
 
 export default function GalleryPage() {
