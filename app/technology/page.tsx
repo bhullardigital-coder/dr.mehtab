@@ -43,7 +43,7 @@ export default function TechnologyPage() {
         <div className="relative mb-24">
           <div className="aspect-video max-w-5xl mx-auto rounded-3xl overflow-hidden relative border border-slate-800 shadow-2xl">
             <Image
-              src="/advanced-dental-technology.webp"
+              src="/advanced-dental-technology.jpg"
               alt="Advanced Dental Technology"
               fill
               className="object-cover"
